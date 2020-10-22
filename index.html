@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Responsive nav</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+<header class="header">
+
+    <button id="nav-toggle" class="nav-toggle">Open menu</button>
+
+    <nav class="nav-collapse" id="nav">
+        <ul class="menu-items">
+            <li>
+                <a href="#">Link 1</a>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="has-dropdown">Link 2</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Sub link A</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="has-dropdown">Sub link B</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Deep link A</a></li>
+                            <li><a href="#">Deep link B</a></li>
+                            <li><a href="#">Deep link C</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="has-dropdown">Sub link C</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Deep link D</a></li>
+                            <li><a href="#">Deep link E</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="has-dropdown">Link 3</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Sub link D</a></li>
+                    <li><a href="#">Sub link E</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="has-dropdown">Link 4</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Sub link F</a></li>
+                    <li><a href="#">Sub link G</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+    </nav>
+
+</header>
+
+<main id="content" class="site-content">
+    <h1>Content</h1>
+    <p>Vestibulum id ligula porta felis euismod semper.</p>
+</main>
+
+<script src="site-min.js"></script>
+</body>
+
+</html>
