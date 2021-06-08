@@ -1,9 +1,6 @@
 /* Responsive nav
    ------------------------------------------------------------ */
 
-$desktop-link-color: #fff;
-$desktop-link-background-color: #000;
-
 /* responsive-nav.js 1.0.39 by @viljamis
    ------------------------------ */
 .nav-collapse li {
@@ -30,7 +27,7 @@ $desktop-link-background-color: #000;
   user-select: none;
 }
 
-@media screen and (min-width: $nav-breakpoint) {
+@media screen and (min-width: $responsive-nav-breakpoint) {
   .js .nav-collapse {
     position: relative;
     &.closed {
@@ -65,7 +62,7 @@ $desktop-link-background-color: #000;
       list-style-type: none;
     }
 
-    @media screen and (max-width: $nav-breakpoint) {
+    @media screen and (max-width: $responsive-nav-breakpoint) {
       // Small screens
       flex-direction: column;
     }
@@ -77,7 +74,7 @@ $desktop-link-background-color: #000;
 .nav-collapse li {
   width: auto;
 
-  @media screen and (max-width: $nav-breakpoint) {
+  @media screen and (max-width: $responsive-nav-breakpoint) {
     // Small screens
     width: 100%;
   }
@@ -90,12 +87,12 @@ $desktop-link-background-color: #000;
     width: 100%;
     text-align: center;
 
-    @media screen and (max-width: $nav-breakpoint) {
+    @media screen and (max-width: $responsive-nav-breakpoint) {
       // Small screens
       text-align: left;
       display: block;
-      height: $nav-height;
-      line-height: $nav-height;
+      height: $responsive-nav-height;
+      line-height: $responsive-nav-height;
     }
   }
 }
@@ -129,7 +126,7 @@ $desktop-link-background-color: #000;
 }
 
 // Dropdown level small screen styles
-@media screen and (max-width: $nav-breakpoint) {
+@media screen and (max-width: $responsive-nav-breakpoint) {
   .js .nav-collapse {
     visibility: hidden;
 
@@ -162,7 +159,7 @@ $desktop-link-background-color: #000;
 /* Create expandable dropdown submenus
    ------------------------------ */
 
-// To activate, change max-width to $nav-breakpoint
+// To activate, change max-width to $responsive-nav-breakpoint
 @media screen and (max-width: 0) {
   .js .nav-collapse {
     &.multiple-level-nav .sub-menu {
@@ -181,8 +178,8 @@ $desktop-link-background-color: #000;
       color: black;
       background-color: grey;
       content: "";
-      height: $nav-height;
-      width: $nav-height;
+      height: $responsive-nav-height;
+      width: $responsive-nav-height;
       margin: 0;
       padding: 0;
       position: absolute;
@@ -233,7 +230,7 @@ $desktop-link-background-color: #000;
 
 /* Large screen styles
    ------------------------------ */
-@media screen and (min-width: $nav-breakpoint) {
+@media screen and (min-width: $responsive-nav-breakpoint) {
   .nav-collapse {
     padding-right: 2%;
     position: relative;
@@ -262,8 +259,8 @@ $desktop-link-background-color: #000;
     li {
       border: 0;
       display: inline-block;
-      height: $nav-height;
-      line-height: $nav-height;
+      height: $responsive-nav-height;
+      line-height: $responsive-nav-height;
       position: relative;
 
       a {
@@ -304,7 +301,7 @@ $desktop-link-background-color: #000;
      ------------------------------ */
   .nav-collapse ul li:hover > ul,
   .nav-collapse ul li.focus > ul {
-    top: $nav-height;
+    top: $responsive-nav-height;
     left: 50%;
     transform: translateX(-50%);
   }
