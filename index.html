@@ -11,8 +11,8 @@
 
 <style>
     main {
-        margin: 3em auto;
-        max-width: 84em;
+            max-width: var(--max-width);
+            margin: var(--space-xs) auto 0;
     } 
 </style>
 
@@ -22,7 +22,7 @@
 
 <header class="header">
 
-    <nav role="navigation" aria-labelledby="nav-toggle-text">
+    <nav role="navigation" aria-label="Main">
 
     <a href="/" class="logo" title="home">
         <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" class="logoSvg" role="img" aria-labelledby="svgTitle">
@@ -38,6 +38,7 @@
         </svg>
     </a>
 
+    
     <button id="nav-toggle" class="nav-toggle">
         <span id="nav-toggle-text">Menu</span>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true">
@@ -48,36 +49,36 @@
     </button>
 
         <div class="nav-wrapper" id="nav-wrapper">
-            <ul class="nav menu-items" role="menu">
-            <li role="menuitem">
+            <ul class="nav menu-items">
+            <li>
                 <a href="#">Link A</a>
             </li>
-            <li class="dropdown" role="menuitem">
+            <li class="dropdown">
                 <a class="has-dropdown">Link B</a>
-                <ul class="sub-menu" role="menu">
-                    <li role="menuitem"><a href="#">Sublink A</a></li>
-                    <li class="dropdown" role="menuitem">
+                <ul class="sub-menu">
+                    <li><a href="#">Sublink A</a></li>
+                    <li class="dropdown">
                         <a class="has-dropdown">Sublink B</a>
-                        <ul class="sub-menu" role="menu">
-                            <li role="menuitem"><a href="#">Sub-sublink A</a></li>
-                            <li role="menuitem"><a href="#">Sub-sublink B</a></li>
-                            <li role="menuitem"><a href="#">Sub-sublink C</a></li>
+                        <ul class="sub-menu">
+                            <li><a href="#">Sub-sublink A</a></li>
+                            <li><a href="#">Sub-sublink B</a></li>
+                            <li><a href="#">Sub-sublink C</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown" role="menuitem">
+                    <li class="dropdown">
                         <a class="has-dropdown">Sublink C</a>
-                        <ul class="sub-menu" role="menu">
-                            <li role="menuitem"><a href="#">Sub-sublink D</a></li>
-                            <li role="menuitem"><a href="#">Sub-sublink E</a></li>
+                        <ul class="sub-menu">
+                            <li><a href="#">Sub-sublink D</a></li>
+                            <li><a href="#">Sub-sublink E</a></li>
                         </ul>
                     </li>
                 </ul>
             </li>
-            <li class="dropdown" role="menuitem">
+            <li class="dropdown">
                 <a class="has-dropdown">Link C</a>
-                <ul class="sub-menu" role="menu">
-                    <li role="menuitem"><a href="#">Sublink D</a></li>
-                    <li role="menuitem"><a href="#">Sublink E</a></li>
+                <ul class="sub-menu">
+                    <li><a href="#">Sublink D</a></li>
+                    <li><a href="#">Sublink E</a></li>
                 </ul>
             </li>
         </ul>
@@ -88,7 +89,24 @@
 
 <main id="content" class="site-content">
     <h1>Content</h1>
-    <p>Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Sed posuere consectetur est at lobortis.</p>
+    <p>Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia bibendum nulla sed
+    consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Integer posuere erat a ante
+    venenatis dapibus posuere velit aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu leo
+    quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec ullamcorper nulla non metus auctor fringilla.
+    Donec id elit non mi porta gravida at eget metus. Donec sed odio dui. Donec id elit non mi porta gravida at eget
+    metus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna
+    mollis ornare vel eu leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus,
+    porta ac consectetur ac, vestibulum at eros. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a
+    pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia bibendum nulla sed
+    consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Integer posuere erat a ante
+    venenatis dapibus posuere velit aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu leo
+    quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec ullamcorper nulla non metus auctor fringilla.
+    Donec id elit non mi porta gravida at eget metus. Donec sed odio dui. Donec id elit non mi porta gravida at eget
+    metus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna
+    mollis ornare vel eu leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus,
+    porta ac consectetur ac, vestibulum at eros. Sed posuere consectetur est at lobortis.</p>
 </main>
 
 <script src="site-min.js"></script>
