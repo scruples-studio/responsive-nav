@@ -1,12 +1,8 @@
 /* Responsive nav component
    ------------------------------ */
 
-// Demo extras
 @import "extra/reset";
-@import "extra/screen-reader";
-
-// Responsive nav component styles
-@import "components/responsive-nav/mixins";
-@import "components/responsive-nav/icons";
-@import "components/responsive-nav/variables";
+@import "required/mixins";
+@import "required/screen-reader";
+@import "required/variables";
 @import "components/responsive-nav/responsive-nav";
