@@ -528,3 +528,20 @@ $submenu-toggle-event-bg-color: transparent;
     }
   }
 }
+
+// Animate menu opening
+.nav-wrapper.opened,
+.nav-toggle.active #nav-toggle-text {
+  animation-duration: 1000ms;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
