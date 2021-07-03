@@ -221,6 +221,8 @@ select {
           flex-wrap: wrap;
   -webkit-justify-content: flex-start;
           justify-content: flex-start;
+  overflow: hidden;
+  padding-bottom: 1em;
 }
 @media screen and (max-width: 50em) {
   [role=navigation] {
@@ -452,7 +454,6 @@ select {
     position: absolute;
     display: block;
     overflow: hidden;
-    zoom: 1;
     visibility: hidden;
   }
   .js .nav-wrapper.opened {
@@ -485,7 +486,6 @@ select {
     position: absolute;
     display: none;
     overflow: hidden;
-    zoom: 1;
   }
   .js .nav-wrapper .dropdown-toggle {
     display: block;

@@ -50,6 +50,8 @@ $submenu-toggle-event-bg-color: transparent;
   flex-direction: row;
   flex-wrap: wrap; // Use wrap-reverse to place links above header
   justify-content: flex-start; // Right-align large screen menu: space-between;
+  overflow: hidden;
+  padding-bottom: 1em;
 
   @media screen and (max-width: $responsive-nav-breakpoint) {
     justify-content: space-between; // Right-align nav toggle button
@@ -325,7 +327,7 @@ $submenu-toggle-event-bg-color: transparent;
       position: absolute;
       display: block;
       overflow: hidden;
-      zoom: 1;
+      // zoom: 1;
       visibility: hidden;
 
       &.opened {
@@ -370,7 +372,7 @@ $submenu-toggle-event-bg-color: transparent;
       position: absolute;
       display: none; // Don't focus on sub menu items unless the sub menu is open
       overflow: hidden;
-      zoom: 1;
+      // zoom: 1;
     }
 
     // Submenu toggle buttons
