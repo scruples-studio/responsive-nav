@@ -5,9 +5,6 @@
 // The breakpoint – collapse the nav at this width
 $responsive-nav-breakpoint: 50em;
 
-// Icon
-$navIconColor: #000;
-
 // Logo anchor and SVG dimensions
 $logo-height: 3em;
 $logo-width: 3em;
@@ -47,14 +44,12 @@ $submenu-toggle-event-bg-color: transparent;
 // Primary nav
 [role="navigation"] {
   max-width: var(--max-width);
-  margin: var(--space-xs) auto 0;
+  margin: var(--space-xs) auto 2em auto;
   position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; // Use wrap-reverse to place links above header
   justify-content: flex-start; // Right-align large screen menu: space-between;
-  overflow: hidden;
-  padding-bottom: 1em;
 
   @media screen and (max-width: $responsive-nav-breakpoint) {
     justify-content: space-between; // Right-align nav toggle button
@@ -390,7 +385,7 @@ $submenu-toggle-event-bg-color: transparent;
       right: 0;
       text-transform: lowercase;
       cursor: pointer;
-      width: calc(36px + 8.5em);
+      width: 100%;
       text-align: center;
 
       @include on-event {
@@ -549,14 +544,16 @@ $submenu-toggle-event-bg-color: transparent;
 }
 
 // Menu icon
+
+// variables
+$navIconColor: #000;
 $iconVal1: 4px;
 $iconVal2: 10px;
 $iconVal3: 16px;
 
 .navIcon {
   position: relative;
-  width: 36px;
-  min-width: 36px;
+  width: 44px;
   cursor: pointer;
 }
 
@@ -567,6 +564,7 @@ $iconVal3: 16px;
   display: block;
   height: $iconVal1;
   transition: all 0.1s;
+  border-radius: $iconVal1;
 }
 .navIcon:before {
   box-shadow: 0 $iconVal2 0 $navIconColor;

@@ -211,7 +211,7 @@ select {
    ------------------------------------------------------------- */
 [role=navigation] {
   max-width: var(--max-width);
-  margin: var(--space-xs) auto 0;
+  margin: var(--space-xs) auto 2em auto;
   position: relative;
   display: -webkit-flex;
   display: flex;
@@ -221,8 +221,6 @@ select {
           flex-wrap: wrap;
   -webkit-justify-content: flex-start;
           justify-content: flex-start;
-  overflow: hidden;
-  padding-bottom: 1em;
 }
 @media screen and (max-width: 50em) {
   [role=navigation] {
@@ -493,7 +491,7 @@ select {
     right: 0;
     text-transform: lowercase;
     cursor: pointer;
-    width: calc(36px + 8.5em);
+    width: 100%;
     text-align: center;
   }
   .js .nav-wrapper .dropdown-toggle:hover, .js .nav-wrapper .dropdown-toggle:active, .js .nav-wrapper .dropdown-toggle:focus {
@@ -631,8 +629,7 @@ select {
 }
 .navIcon {
   position: relative;
-  width: 36px;
-  min-width: 36px;
+  width: 44px;
   cursor: pointer;
 }
 
@@ -643,6 +640,7 @@ select {
   display: block;
   height: 4px;
   transition: all 0.1s;
+  border-radius: 4px;
 }
 
 .navIcon:before {
