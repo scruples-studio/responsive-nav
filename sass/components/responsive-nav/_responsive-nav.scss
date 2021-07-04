@@ -390,7 +390,7 @@ $submenu-toggle-event-bg-color: transparent;
       right: 0;
       text-transform: lowercase;
       cursor: pointer;
-      width: 100%;
+      width: calc(36px + 8.5em);
       text-align: center;
 
       @include on-event {

@@ -493,7 +493,7 @@ select {
     right: 0;
     text-transform: lowercase;
     cursor: pointer;
-    width: 100%;
+    width: calc(36px + 8.5em);
     text-align: center;
   }
   .js .nav-wrapper .dropdown-toggle:hover, .js .nav-wrapper .dropdown-toggle:active, .js .nav-wrapper .dropdown-toggle:focus {
