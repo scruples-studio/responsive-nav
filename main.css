@@ -632,6 +632,7 @@ select {
 .navIcon {
   position: relative;
   width: 36px;
+  min-width: 36px;
   cursor: pointer;
 }
 
