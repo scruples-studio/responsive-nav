@@ -78,9 +78,7 @@ $submenu-toggle-event-bg-color: transparent;
     background-color: $toggle-bg-color;
     text-decoration: none;
     position: relative;
-    // overflow: hidden;
-    // display: flex;
-    // align-items: center;
+    padding: 0;
 
     @include on-event {
       color: $toggle-event-color;
@@ -550,10 +548,11 @@ $navIconColor: #000;
 $iconVal1: 4px;
 $iconVal2: 10px;
 $iconVal3: 16px;
+$navLabelWidth: 8em;
 
 .navIcon {
   position: relative;
-  width: 44px;
+  width: 38px;
   cursor: pointer;
 }
 
@@ -579,11 +578,11 @@ $iconVal3: 16px;
 }
 
 .navLabel {
-  width: 8em;
+  width: $navLabelWidth;
   text-align: right;
   position: absolute;
   top: 50%;
   left: 0;
-  transform: translate(-7.7em, -50%);
+  transform: translate(-$navLabelWidth, -50%);
   padding-right: 0.5em;
 }

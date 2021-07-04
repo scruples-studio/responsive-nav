@@ -249,6 +249,7 @@ select {
   background-color: transparent;
   text-decoration: none;
   position: relative;
+  padding: 0;
 }
 [role=navigation] .nav-toggle:hover, [role=navigation] .nav-toggle:active, [role=navigation] .nav-toggle:focus {
   color: black;
@@ -629,7 +630,7 @@ select {
 }
 .navIcon {
   position: relative;
-  width: 44px;
+  width: 38px;
   cursor: pointer;
 }
 
@@ -665,8 +666,8 @@ select {
   position: absolute;
   top: 50%;
   left: 0;
-  -webkit-transform: translate(-7.7em, -50%);
-          transform: translate(-7.7em, -50%);
+  -webkit-transform: translate(-8em, -50%);
+          transform: translate(-8em, -50%);
   padding-right: 0.5em;
 }
 
