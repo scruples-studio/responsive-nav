@@ -5,6 +5,9 @@
 // The breakpoint – collapse the nav at this width
 $responsive-nav-breakpoint: 50em;
 
+// Icon
+$navIconColor: #000;
+
 // Logo anchor and SVG dimensions
 $logo-height: 3em;
 $logo-width: 3em;
@@ -78,12 +81,11 @@ $submenu-toggle-event-bg-color: transparent;
     border: none;
     color: $toggle-color;
     background-color: $toggle-bg-color;
-    user-select: none;
     text-decoration: none;
     position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
+    // overflow: hidden;
+    // display: flex;
+    // align-items: center;
 
     @include on-event {
       color: $toggle-event-color;
@@ -544,4 +546,45 @@ $submenu-toggle-event-bg-color: transparent;
   100% {
     opacity: 1;
   }
+}
+
+// Menu icon
+$iconVal1: 4px;
+$iconVal2: 10px;
+$iconVal3: 16px;
+
+.navIcon {
+  position: relative;
+  width: 2.75em;
+  cursor: pointer;
+}
+
+.navIcon:before,
+.navIcon:after {
+  background-color: $navIconColor;
+  content: "";
+  display: block;
+  height: $iconVal1;
+  transition: all 0.1s;
+}
+.navIcon:before {
+  box-shadow: 0 $iconVal2 0 $navIconColor;
+  margin-bottom: $iconVal3;
+}
+.navIcon.active:before {
+  box-shadow: 0 0 0 $navIconColor;
+  transform: translateY($iconVal2) rotate(45deg);
+}
+.navIcon.active:after {
+  transform: translateY(-$iconVal2) rotate(-45deg);
+}
+
+.navLabel {
+  width: 8em;
+  text-align: right;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-7.7em, -50%);
+  padding-right: 0.5em;
 }

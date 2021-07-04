@@ -249,14 +249,8 @@ select {
   border: none;
   color: black;
   background-color: transparent;
-  user-select: none;
   text-decoration: none;
   position: relative;
-  overflow: hidden;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-          align-items: center;
 }
 [role=navigation] .nav-toggle:hover, [role=navigation] .nav-toggle:active, [role=navigation] .nav-toggle:focus {
   color: black;
@@ -634,6 +628,47 @@ select {
   100% {
     opacity: 1;
   }
+}
+.navIcon {
+  position: relative;
+  width: 2.75em;
+  cursor: pointer;
+}
+
+.navIcon:before,
+.navIcon:after {
+  background-color: #000;
+  content: "";
+  display: block;
+  height: 4px;
+  transition: all 0.1s;
+}
+
+.navIcon:before {
+  box-shadow: 0 10px 0 #000;
+  margin-bottom: 16px;
+}
+
+.navIcon.active:before {
+  box-shadow: 0 0 0 #000;
+  -webkit-transform: translateY(10px) rotate(45deg);
+          transform: translateY(10px) rotate(45deg);
+}
+
+.navIcon.active:after {
+  -webkit-transform: translateY(-10px) rotate(-45deg);
+          transform: translateY(-10px) rotate(-45deg);
+}
+
+.navLabel {
+  width: 8em;
+  text-align: right;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(-7.7em, -50%);
+          transform: translate(-7.7em, -50%);
+  padding-right: 0.5em;
 }
 
 /*# sourceMappingURL=main.css.map */
