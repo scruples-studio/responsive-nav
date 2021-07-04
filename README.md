@@ -1,9 +1,7 @@
 # Responsive nav
 
-This takes the Responsive Nav JS and converts it into a reusuable SASS component. Updated to use flexbox.
-
-Demo: https://unlikelyobjects.github.io/responsive-nav
+This takes the [Responsive Nav JS](https://github.com/viljamis/responsive-nav.js) [also](https://github.com/samikeijonen/responsive-nav.js) and converts it into a reusuable SASS component.
 
 ----
 
-Original from https://github.com/samikeijonen/responsive-nav.js and https://github.com/viljamis/responsive-nav.js.
+Demo: https://scruples-studio.github.io/responsive-nav/
