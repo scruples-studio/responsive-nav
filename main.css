@@ -460,7 +460,7 @@ select {
   .js .nav-wrapper.multiple-level-nav.opened.dropdown-active {
     max-height: 9999px !important;
   }
-  .js .nav-wrapper.multiple-level-nav .submenu.toggled {
+  .js .nav-wrapper.multiple-level-nav .sub-menu.toggled {
     display: block;
     max-height: 9999px;
     position: relative;
@@ -474,7 +474,7 @@ select {
 }
 
 @media screen and (max-width: 50em) {
-  .js .nav-wrapper.multiple-level-nav .submenu {
+  .js .nav-wrapper.multiple-level-nav .sub-menu {
     clip: rect(0 0 0 0);
     max-height: 0;
     position: absolute;
@@ -550,16 +550,16 @@ select {
     background: black;
   }
 }
-[role=navigation] .nav-wrapper .nav li.dropdown ul.submenu .dropdown:hover .has-dropdown, [role=navigation] .nav-wrapper .nav li.dropdown ul.submenu .dropdown:active .has-dropdown, [role=navigation] .nav-wrapper .nav li.dropdown ul.submenu .dropdown:focus .has-dropdown {
+[role=navigation] .nav-wrapper .nav li.dropdown ul.sub-menu .dropdown:hover .has-dropdown, [role=navigation] .nav-wrapper .nav li.dropdown ul.sub-menu .dropdown:active .has-dropdown, [role=navigation] .nav-wrapper .nav li.dropdown ul.sub-menu .dropdown:focus .has-dropdown {
   color: lightblue;
   background-color: #252525;
 }
-[role=navigation] .nav-wrapper .nav li.dropdown ul.submenu .dropdown .has-dropdown {
+[role=navigation] .nav-wrapper .nav li.dropdown ul.sub-menu .dropdown .has-dropdown {
   color: black;
   background: #f0f0f0;
 }
 @media screen and (max-width: 50em) {
-  [role=navigation] .nav-wrapper .nav li.dropdown ul.submenu .dropdown .has-dropdown {
+  [role=navigation] .nav-wrapper .nav li.dropdown ul.sub-menu .dropdown .has-dropdown {
     color: white;
     background: black;
   }
