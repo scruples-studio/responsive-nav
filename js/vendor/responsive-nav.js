@@ -245,7 +245,7 @@
           enableFocus: true,               // Boolean: Do we add 'focus' class in nav elements
           enableDropdown: true,            // Boolean: Do we use multi level dropdown
           menuItems: "menu-items",          // String: Class that is added only to top ul element
-          subMenu: "sub-menu",              // String: Class that is added to sub menu ul elements
+          subMenu: "submenu",              // String: Class that is added to sub menu ul elements
           openDropdown: "Open submenu",    // String: Label for opening sub menu
           closeDropdown: "Close sub menu",  // String: Label for closing sub menu
           init: function(){},               // Function: Init callback

@@ -307,6 +307,7 @@ $submenu-toggle-event-bg-color: transparent;
     position: relative;
     &.closed {
       max-height: none;
+      margin-bottom: -1em;
     }
 
     .nav-wrapper,
@@ -339,7 +340,7 @@ $submenu-toggle-event-bg-color: transparent;
         &.opened.dropdown-active {
           max-height: 9999px !important;
         }
-        .sub-menu.toggled {
+        .submenu.toggled {
           display: block;
           max-height: 9999px;
           position: relative;
@@ -361,7 +362,7 @@ $submenu-toggle-event-bg-color: transparent;
 // Create expandable dropdown submenus
 @media screen and (max-width: $responsive-nav-breakpoint) {
   .js .nav-wrapper {
-    &.multiple-level-nav .sub-menu {
+    &.multiple-level-nav .submenu {
       clip: rect(0 0 0 0);
       max-height: 0;
       position: absolute;
@@ -457,7 +458,7 @@ $submenu-toggle-event-bg-color: transparent;
             }
 
             // Level 2 link with submenu
-            &.sub-menu {
+            &.submenu {
               .dropdown {
                 @include on-event {
                   .has-dropdown {
@@ -527,7 +528,7 @@ $submenu-toggle-event-bg-color: transparent;
 // Animate menu opening
 .nav-wrapper.opened,
 .nav-toggle.active #nav-toggle-text {
-  animation-duration: 1000ms;
+  animation-duration: 1200ms;
   animation-fill-mode: both;
   animation-name: fadeIn;
 }

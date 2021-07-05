@@ -434,6 +434,7 @@ select {
 }
 .js .nav-wrapper.closed {
   max-height: none;
+  margin-bottom: -1em;
 }
 .js .nav-wrapper .nav-wrapper,
 .js .nav-wrapper .nav-wrapper .dropdown ul {
@@ -459,7 +460,7 @@ select {
   .js .nav-wrapper.multiple-level-nav.opened.dropdown-active {
     max-height: 9999px !important;
   }
-  .js .nav-wrapper.multiple-level-nav .sub-menu.toggled {
+  .js .nav-wrapper.multiple-level-nav .submenu.toggled {
     display: block;
     max-height: 9999px;
     position: relative;
@@ -473,7 +474,7 @@ select {
 }
 
 @media screen and (max-width: 50em) {
-  .js .nav-wrapper.multiple-level-nav .sub-menu {
+  .js .nav-wrapper.multiple-level-nav .submenu {
     clip: rect(0 0 0 0);
     max-height: 0;
     position: absolute;
@@ -549,16 +550,16 @@ select {
     background: black;
   }
 }
-[role=navigation] .nav-wrapper .nav li.dropdown ul.sub-menu .dropdown:hover .has-dropdown, [role=navigation] .nav-wrapper .nav li.dropdown ul.sub-menu .dropdown:active .has-dropdown, [role=navigation] .nav-wrapper .nav li.dropdown ul.sub-menu .dropdown:focus .has-dropdown {
+[role=navigation] .nav-wrapper .nav li.dropdown ul.submenu .dropdown:hover .has-dropdown, [role=navigation] .nav-wrapper .nav li.dropdown ul.submenu .dropdown:active .has-dropdown, [role=navigation] .nav-wrapper .nav li.dropdown ul.submenu .dropdown:focus .has-dropdown {
   color: lightblue;
   background-color: #252525;
 }
-[role=navigation] .nav-wrapper .nav li.dropdown ul.sub-menu .dropdown .has-dropdown {
+[role=navigation] .nav-wrapper .nav li.dropdown ul.submenu .dropdown .has-dropdown {
   color: black;
   background: #f0f0f0;
 }
 @media screen and (max-width: 50em) {
-  [role=navigation] .nav-wrapper .nav li.dropdown ul.sub-menu .dropdown .has-dropdown {
+  [role=navigation] .nav-wrapper .nav li.dropdown ul.submenu .dropdown .has-dropdown {
     color: white;
     background: black;
   }
@@ -603,8 +604,8 @@ select {
 
 .nav-wrapper.opened,
 .nav-toggle.active #nav-toggle-text {
-  -webkit-animation-duration: 1000ms;
-          animation-duration: 1000ms;
+  -webkit-animation-duration: 1200ms;
+          animation-duration: 1200ms;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
   -webkit-animation-name: fadeIn;
