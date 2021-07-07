@@ -9,6 +9,22 @@
   ],
   "creatorBuild" : "34127",
   "files" : {
+    "\/.gitignore" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/.gitignore",
+      "oF" : 0
+    },
+    "\/demo-2.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/demo-2.html",
+      "oF" : 0
+    },
     "\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -193,7 +209,7 @@
   },
   "projectAttributes" : {
     "creationDate" : 625024078.78842402,
-    "displayValue" : "responsive-nav",
+    "displayValue" : "responsive-nav-2",
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets-rose",
     "iconImageWasSetByUser" : 0
